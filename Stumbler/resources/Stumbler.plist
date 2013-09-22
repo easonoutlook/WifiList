@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*******************************************************************************
+ * iPhone-Wireless Project : Stumbler                                          *
+ * Copyright (C) 2007-2008 Pumpkin <pumpkingod@gmail.com>                      *
+ * Copyright (C) 2007-2008 Lokkju <lokkju@gmail.com>                           *
+ *******************************************************************************
+ * $LastChangedDate:: 2008-01-30 05:02:23 +0800 (Wed, 30 Jan 2008)           $ *
+ * $LastChangedBy:: lokkju                                                   $ *
+ * $LastChangedRevision:: 140                                                $ *
+ * $Id:: Stumbler.plist 140 2008-01-29 21:02:23Z lokkju                      $ *
+ *******************************************************************************
+ *  This program is free software: you can redistribute it and/or modify       *
+ *  it under the terms of the GNU General Public License as published by       *
+ *  the Free Software Foundation, either version 3 of the License, or          *
+ *  (at your option) any later version.                                        *
+ *                                                                             *
+ *  This program is distributed in the hope that it will be useful,            *
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of             *
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the              *
+ *  GNU General Public License for more details.                               *
+ *                                                                             *
+ *  You should have received a copy of the GNU General Public License          *
+ *  along with this program.  If not, see <http://www.gnu.org/licenses/>.      *
+ *******************************************************************************/
+
+/* $HeadURL: http://iphone-wireless.googlecode.com/svn/trunk/Stumbler/resources/Stumbler.plist $ */
+-->
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleIdentifier</key>
+	<string>com.googlecode.iphone-wireless.applications.Stumbler</string>
+	<key>name</key>
+	<string>Stumbler</string>
+	<key>version</key>
+	<string>#VERSION#</string>
+	<key>location</key>
+	<string>http://iphonelets.com/repository/zips/Stumbler-#VERSION#.zip</string>
+	<key>size</key>
+	<string>#SIZE#</string>
+	<key>url</key>
+	<string>http://iphone-wireless.googlecode.com</string>
+	<key>description</key>
+	<string>A wireless network discovery and monitoring application, with support for 802.11 and eventually bluetooth and GSM protocols.</string>
+	<key>scripts</key>
+	<dict>
+		<key>install</key>
+		<array>
+			<array>
+				<string>CopyPath</string>
+				<string>Stumbler.app</string>
+				<string>/Applications/Stumbler.app</string>
+			</array>
+		</array>
+		<key>uninstall</key>
+		<array>
+			<array>
+				<string>RemovePath</string>
+				<string>/Applications/Stumbler.app</string>
+			</array>
+		</array>
+	</dict>
+</dict>
+</plist>
